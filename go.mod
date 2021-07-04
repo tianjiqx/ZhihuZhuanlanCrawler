@@ -1,4 +1,4 @@
-module github.com/solarhell/ZhihuZhuanlanCrawler
+module github.com/tianjiqx/ZhihuZhuanlanCrawler
 
 go 1.12
 
