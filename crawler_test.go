@@ -52,7 +52,7 @@ func crawlColumns(t *testing.T, columns []string) {
 
 }
 
-func crawlDB(t *testing.T) {
+func TestCrawlDB(t *testing.T) {
 	//数据库专题
 	dbColumnNames := [...]string{"newsql", // tidb后花园
 		"c_1166294802416611328", //分布式数据库
@@ -69,12 +69,46 @@ func crawlDB(t *testing.T) {
 		"360infra",              //MySQL内核揭秘
 		"c_131009364",           // Distributed Things-网易存储团队
 		"c_1053716921761026048", //学习前沿分布式系统的一致性设计
+		"c_1036557865221173248", //分布式存储的七方面问题
+		"tsangpo",               //tsangpo's note
+		"c_1266892102010945536", //跟工作相关的正经事儿
+		"c_126076715",           //分布式数据库-路云飞
 	}
 
 	crawlColumns(t, dbColumnNames[:])
 }
 
-func crawlTest(t *testing.T) {
+func TestCrawlBigData(t *testing.T) {
+	// 大数据专栏
+	bigDataColumnNames := [...]string{"c_1225812232481046528", //BigData魔法盒
+		"meituantech",           //美团技术博客,主题杂
+		"c_128579185",           //阿里大数据玩家
+		"c_1051807253732175872", //高可用架构
+		"codehole",              //码洞
+		"deepinsight",           //洞见实验室
+		"zuoqin",                //分布式存储系统和性能优化
+	}
+
+	crawlColumns(t, bigDataColumnNames[:])
+}
+
+func TestCrawlCloud(t *testing.T) {
+	// 云服务专栏
+	cloudColumnNames := [...]string{"c_1010851081424879616", //阿里巴巴云原生
+		"TencentCloudCommunity", //腾讯云+社区
+		"c_148580541",           //进击的云计算
+		"tencent-TEG",           // 腾讯技术, 杂主题
+		"c_1321864303444451328", //腾讯云原生
+		"aliyunedu",             // 阿里云大学
+		"cactus",                //云计算会议论文快报
+		"c_1040269471008538624", //白话云计算
+		"marketplace",           //企业上云那些事
+	}
+
+	crawlColumns(t, cloudColumnNames[:])
+}
+
+func CrawlTest(t *testing.T) {
 	//数据库专题
 	dbColumnNames := [...]string{"likai"} // 分布式与存储技术-郁白
 
@@ -83,10 +117,10 @@ func crawlTest(t *testing.T) {
 
 // 默认测试
 func TestCrawl(t *testing.T) {
-	crawlDB(t)
+	TestCrawlDB(t)
 }
 
 // 快速测试
 func TestCrawl2(t *testing.T) {
-	crawlTest(t)
+	CrawlTest(t)
 }

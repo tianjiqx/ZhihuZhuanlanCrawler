@@ -6,6 +6,7 @@
 
 将自己关心的专栏的文章标题连接全部收集，输出为md文件，便于根据主题的进行学习。
 
+PS: 知乎已经取消专栏关注功能，使用爬虫进行手动关注，也是一种解决方式。
 
 ## 测试爬虫功能
 
@@ -15,8 +16,14 @@
 
 go test -run TestCrawl2 
 
-#个人DB专栏爬取
-go test -run TestCrawl > 2021.07.04.zhihuColumns.md
+#个人DB专栏爬取, 默认单个测试10m，超时报错
+go test -run TestCrawl  -timeout 1h > 2021.07.09.zhihuColumns.database.md
+
+#大数据
+go test -run TestCrawlBigData -timeout 20m  > 2021.07.09.zhihuColumns.bigData.md
+
+#云原生
+go test -run TestCrawlCloud  -timeout 20m > 2021.07.09.zhihuColumns.cloud.md
 
 ```
 
@@ -33,7 +40,7 @@ go test -run TestCrawl > 2021.07.04.zhihuColumns.md
 
 TODO：
 
-了解知乎API，更简洁的获取内容，话题，关键词。
+了解知乎API，更简洁的获取内容，话题，关键词，增量更新。
 
 
 
