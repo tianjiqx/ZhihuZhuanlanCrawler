@@ -87,6 +87,8 @@ func TestCrawlBigData(t *testing.T) {
 		"codehole",              //码洞
 		"deepinsight",           //洞见实验室
 		"zuoqin",                //分布式存储系统和性能优化
+		"c_1093515476512169984", //DevTalk
+		"fix-bug",               //挖坑/填坑笔记
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
