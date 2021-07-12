@@ -110,6 +110,19 @@ func TestCrawlCloud(t *testing.T) {
 	crawlColumns(t, cloudColumnNames[:])
 }
 
+func TestCrawProgramLang(t *testing.T) {
+  // 编程语言
+	programLangsCN: := [...]string{"c_1078248076300521472", //做一枚爱生活的Rustacean
+	"c_1139487758685900800", // CPP工程师的Rust迁移之路
+	"rust-lang", //Rust编程
+	}
+	
+	crawlColumns(t, programLangsCN[:])
+
+}
+
+
+
 func CrawlTest(t *testing.T) {
 	//数据库专题
 	dbColumnNames := [...]string{"likai"} // 分布式与存储技术-郁白
