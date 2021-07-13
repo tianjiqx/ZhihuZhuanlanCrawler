@@ -73,6 +73,10 @@ func TestCrawlDB(t *testing.T) {
 		"tsangpo",               //tsangpo's note
 		"c_1266892102010945536", //跟工作相关的正经事儿
 		"c_126076715",           //分布式数据库-路云飞
+		"c_1389568413359099904", //数据库存算分离
+		"c_209506977", //硬核技术
+		"paxos", //Paxos、Raft分布式一致性最佳实践
+		"io-meter", //分布式数据系统小菜
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -89,6 +93,13 @@ func TestCrawlBigData(t *testing.T) {
 		"zuoqin",                //分布式存储系统和性能优化
 		"c_1093515476512169984", //DevTalk
 		"fix-bug",               //挖坑/填坑笔记
+		"c_1364269765981237248", //Clickhouse源码阅读笔记
+		"c_1083667247565705216", //尬聊数据库 tispark
+		"c_1267062136230309888", //架构587
+		"newbigdata", //大数据分析与管理
+    "c_1175452658096476160", //分步试存储
+		"Elasticsearch", //Elasticsearch技术研讨
+
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
