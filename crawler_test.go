@@ -77,6 +77,7 @@ func TestCrawlDB(t *testing.T) {
 		"c_209506977", //硬核技术
 		"paxos", //Paxos、Raft分布式一致性最佳实践
 		"io-meter", //分布式数据系统小菜
+		"c_1238468913098731520", //System全家桶
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -99,6 +100,7 @@ func TestCrawlBigData(t *testing.T) {
 		"newbigdata", //大数据分析与管理
     "c_1175452658096476160", //分步试存储
 		"Elasticsearch", //Elasticsearch技术研讨
+		"c_1242102119706431488", // 数据库干货汇
 
 	}
 
