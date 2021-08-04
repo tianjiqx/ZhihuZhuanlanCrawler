@@ -74,9 +74,9 @@ func TestCrawlDB(t *testing.T) {
 		"c_1266892102010945536", //跟工作相关的正经事儿
 		"c_126076715",           //分布式数据库-路云飞
 		"c_1389568413359099904", //数据库存算分离
-		"c_209506977", //硬核技术
-		"paxos", //Paxos、Raft分布式一致性最佳实践
-		"io-meter", //分布式数据系统小菜
+		"c_209506977",           //硬核技术
+		"paxos",                 //Paxos、Raft分布式一致性最佳实践
+		"io-meter",              //分布式数据系统小菜
 		"c_1238468913098731520", //System全家桶
 	}
 
@@ -97,9 +97,9 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1364269765981237248", //Clickhouse源码阅读笔记
 		"c_1083667247565705216", //尬聊数据库 tispark
 		"c_1267062136230309888", //架构587
-		"newbigdata", //大数据分析与管理
-    "c_1175452658096476160", //分步试存储
-		"Elasticsearch", //Elasticsearch技术研讨
+		"newbigdata",            //大数据分析与管理
+		"c_1175452658096476160", //分步试存储
+		"Elasticsearch",         //Elasticsearch技术研讨
 		"c_1242102119706431488", // 数据库干货汇
 
 	}
@@ -124,17 +124,16 @@ func TestCrawlCloud(t *testing.T) {
 }
 
 func TestCrawProgramLang(t *testing.T) {
-  // 编程语言
-	programLangsCN: := [...]string{"c_1078248076300521472", //做一枚爱生活的Rustacean
-	"c_1139487758685900800", // CPP工程师的Rust迁移之路
-	"rust-lang", //Rust编程
+	// 编程语言
+	programLangsCN := [...]string{"c_1078248076300521472", //做一枚爱生活的Rustacean
+		"c_1139487758685900800", // CPP工程师的Rust迁移之路
+		"rust-lang",             //Rust编程
+		"c_1186237256184029184", //Rust碎碎念
 	}
-	
+
 	crawlColumns(t, programLangsCN[:])
 
 }
-
-
 
 func CrawlTest(t *testing.T) {
 	//数据库专题
