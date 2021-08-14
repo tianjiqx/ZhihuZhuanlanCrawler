@@ -25,6 +25,9 @@ go test -run TestCrawlBigData -timeout 20m  > 2021.07.09.zhihuColumns.bigData.md
 #云原生
 go test -run TestCrawlCloud  -timeout 20m > 2021.07.09.zhihuColumns.cloud.md
 
+# 编程语言
+go test -run TestCrawProgramLang -timeout 20m > 2021.07.09.zhihuColumns.programLang.md
+
 ```
 
 自定义关注的专栏，可以可以参考 [`crawler_test.go`](crawler_test.go)的`crawlDB`方法，设置专栏名，专栏名可以打开知乎专栏的最后一个名字。
