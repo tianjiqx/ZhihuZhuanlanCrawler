@@ -78,6 +78,7 @@ func TestCrawlDB(t *testing.T) {
 		"paxos",                 //Paxos、Raft分布式一致性最佳实践
 		"io-meter",              //分布式数据系统小菜
 		"c_1238468913098731520", //System全家桶
+		"c_1039197804748595200", //程序设计入微探索
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -101,6 +102,10 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1175452658096476160", //分步试存储
 		"Elasticsearch",         //Elasticsearch技术研讨
 		"c_1242102119706431488", // 数据库干货汇
+		"flink-study",           //Flink学习
+		"c_1130154609611808768", //分布式系统最佳实践
+		"c_1417199590352916480", //OpenMLDB专栏
+		"c_1193847637189955584", //夜天之书
 
 	}
 
@@ -129,6 +134,8 @@ func TestCrawProgramLang(t *testing.T) {
 		"c_1139487758685900800", // CPP工程师的Rust迁移之路
 		"rust-lang",             //Rust编程
 		"c_1186237256184029184", //Rust碎碎念
+		"c_1336457387646160896", //业务系统设计 golang
+		"c_1384828279367450624", //java虚拟机
 	}
 
 	crawlColumns(t, programLangsCN[:])
