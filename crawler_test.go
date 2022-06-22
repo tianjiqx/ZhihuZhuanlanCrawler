@@ -79,6 +79,7 @@ func TestCrawlDB(t *testing.T) {
 		"io-meter",              //分布式数据系统小菜
 		"c_1238468913098731520", //System全家桶
 		"c_1039197804748595200", //程序设计入微探索
+		"c_145592370",           //数据库开发
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -106,7 +107,7 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1130154609611808768", //分布式系统最佳实践
 		"c_1417199590352916480", //OpenMLDB专栏
 		"c_1193847637189955584", //夜天之书
-
+		"c_1522870574875033600", //MongoDB 原理与实战
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
@@ -140,6 +141,15 @@ func TestCrawProgramLang(t *testing.T) {
 
 	crawlColumns(t, programLangsCN[:])
 
+}
+
+func TestCrawAiops(t *testing.T) {
+	// AIOPS
+	aiopsColumnsNames = [...]string{
+		"c_178702079", // 智能运维
+	}
+
+	crawlColumns(t, aiopsColumnsNames[:])
 }
 
 func CrawlTest(t *testing.T) {
