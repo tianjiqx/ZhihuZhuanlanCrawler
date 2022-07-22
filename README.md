@@ -25,6 +25,9 @@ go test -run TestCrawlBigData -timeout 20m  > 2021.07.09.zhihuColumns.bigData.md
 #云原生
 go test -run TestCrawlCloud  -timeout 20m > 2021.07.09.zhihuColumns.cloud.md
 
+#aiops
+go test -run TestCrawAiops -timeout 20m > 2021.07.09.zhihuColumns.aiops.md
+
 # 编程语言
 go test -run TestCrawProgramLang -timeout 20m > 2021.07.09.zhihuColumns.programLang.md
 

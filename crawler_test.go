@@ -85,6 +85,8 @@ func TestCrawlDB(t *testing.T) {
 		"c_1364661018229141504", //优化器技术论文学习
 		"673152078",             //事务+存储
 		"c_1461102559150260224", //分布式数据库系统系列论文和技术总结
+		"c_1452728003868946432", //数据库系统论文阅读笔记
+		"c_1525460975381266432", //Micro Reading
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -114,6 +116,7 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1193847637189955584", //夜天之书
 		"c_1522870574875033600", //MongoDB 原理与实战
 		"c_1267062136230309888", //架构587
+		"musicfe",               //网易云音乐技术团队
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
@@ -151,8 +154,11 @@ func TestCrawProgramLang(t *testing.T) {
 
 func TestCrawAiops(t *testing.T) {
 	// AIOPS
-	aiopsColumnsNames = [...]string{
-		"c_178702079", // 智能运维
+	aiopsColumnsNames := [...]string{
+		"c_178702079",           // 智能运维
+		"aiops",                 //智能运维杂谈
+		"aliyunlog",             //智能日志分析
+		"c_1483501606716608512", //AIOPS系统设计
 	}
 
 	crawlColumns(t, aiopsColumnsNames[:])
