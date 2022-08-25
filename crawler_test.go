@@ -117,6 +117,10 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1522870574875033600", //MongoDB 原理与实战
 		"c_1267062136230309888", //架构587
 		"musicfe",               //网易云音乐技术团队
+		"c_1294277883771940864", //深入浅出Presto：PB级OLAP引擎
+		"c_1519018002443554817", //数据湖LakeHouse源码分析
+		"c_1518013778049941504", //Spark源码解读
+		"c_1346850114665979904", // Lucene和广告检索
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
