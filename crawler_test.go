@@ -87,6 +87,9 @@ func TestCrawlDB(t *testing.T) {
 		"c_1461102559150260224", //分布式数据库系统系列论文和技术总结
 		"c_1452728003868946432", //数据库系统论文阅读笔记
 		"c_1525460975381266432", //Micro Reading
+		"c_1522603549544009728", //深入理解leveldb/rocksdb
+		"c_1522681625582612480", //FlyingStorageSystem
+		"c_1556258312865144832", //后厂村数据库杂货铺
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -163,6 +166,8 @@ func TestCrawAiops(t *testing.T) {
 		"aiops",                 //智能运维杂谈
 		"aliyunlog",             //智能日志分析
 		"c_1483501606716608512", //AIOPS系统设计
+		"c_1115285924917047296", //图算法-时序建模-迁移学习
+		"lunzhi". //论智
 	}
 
 	crawlColumns(t, aiopsColumnsNames[:])
