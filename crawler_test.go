@@ -140,6 +140,7 @@ func TestCrawlCloud(t *testing.T) {
 		"cactus",                //云计算会议论文快报
 		"c_1040269471008538624", //白话云计算
 		"marketplace",           //企业上云那些事
+		"c_1393971658005331968", //存储大师班
 	}
 
 	crawlColumns(t, cloudColumnNames[:])
@@ -168,6 +169,9 @@ func TestCrawAiops(t *testing.T) {
 		"c_1483501606716608512", //AIOPS系统设计
 		"c_1115285924917047296", //图算法-时序建模-迁移学习
 		"lunzhi". //论智
+		"c_1134831892254924800", // 机器学习笔记
+		"c_1280888532622143488", //好文
+		"c_1268689730122174464", //清华软院机器学习
 	}
 
 	crawlColumns(t, aiopsColumnsNames[:])
