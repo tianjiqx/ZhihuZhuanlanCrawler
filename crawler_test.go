@@ -90,6 +90,7 @@ func TestCrawlDB(t *testing.T) {
 		"c_1522603549544009728", //深入理解leveldb/rocksdb
 		"c_1522681625582612480", //FlyingStorageSystem
 		"c_1556258312865144832", //后厂村数据库杂货铺
+		"c_1432807986145853440", //存储引擎
 	}
 
 	crawlColumns(t, dbColumnNames[:])
@@ -124,6 +125,8 @@ func TestCrawlBigData(t *testing.T) {
 		"c_1519018002443554817", //数据湖LakeHouse源码分析
 		"c_1518013778049941504", //Spark源码解读
 		"c_1346850114665979904", // Lucene和广告检索
+		"presto-cn", // Presto
+		"c_1148015260706402304", // 大数据和 OLAP 技术原理解析
 	}
 
 	crawlColumns(t, bigDataColumnNames[:])
@@ -172,6 +175,7 @@ func TestCrawAiops(t *testing.T) {
 		"c_1134831892254924800", // 机器学习笔记
 		"c_1280888532622143488", //好文
 		"c_1268689730122174464", //清华软院机器学习
+		"aiinsight", //数据说
 	}
 
 	crawlColumns(t, aiopsColumnsNames[:])
